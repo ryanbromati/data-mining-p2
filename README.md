@@ -1,4 +1,4 @@
-# Análise de Anomalias/Outliers (Clustering)
+# 1. Análise de Anomalias/Outliers (Clustering)
 
 ## Grupo Incomum de Passageiros
 
@@ -21,7 +21,7 @@ Este cluster representa um grupo de passageiros jovens, de baixa renda, que voam
 
 ---
 
-# Regras de Associação: Portal de Notícias
+# 2. Regras de Associação: Portal de Notícias
 
 ## Problema
 
@@ -54,13 +54,13 @@ Prever interesses de leitura de usuários em um portal de notícias, com base em
 
 ## Regras Geradas (Top 10 por lift)
 
-*[Nota: A imagem com a tabela de regras não está disponível neste documento formatado, mas deveria mostrar os antecedentes, consequentes, suporte, confiança e lift para as top 10 regras.]*
+![alt text](lift.png)
 
 Estas regras mostram associações relevantes para recomendações personalizadas de conteúdo. Por exemplo, quem lê sobre "Lifestyle" e "Gastronomia" tem alta probabilidade de também se interessar por "Viagem".
 
 ---
 
-# Regras de Associação: Matrículas em Cursos Universitários
+# 3. Regras de Associação: Matrículas em Cursos Universitários
 
 ## Problema
 
