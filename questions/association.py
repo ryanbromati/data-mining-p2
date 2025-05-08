@@ -160,7 +160,7 @@ def visualize_rules(rules, top_n=10):
     plt.figure(figsize=(14, 12))
     sns.heatmap(association_matrix, annot=True, cmap='YlGnBu', fmt='.2f')
     plt.title('Força das Associações entre Categorias de Conteúdo (Lift)')
-    plt.savefig('category_associations.png')
+    plt.savefig('q2/category_associations.png')
     plt.close()
     
     return top_rules[['antecedents', 'consequents', 'support', 'confidence', 'lift']]

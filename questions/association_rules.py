@@ -63,7 +63,7 @@ plt.figure(figsize=(12, 10))
 correlation_matrix = df_clean.corr()
 sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt='.2f')
 plt.title('Matriz de Correlação')
-plt.savefig('correlation_matrix.png')
+plt.savefig('q3/correlation_matrix.png')
 plt.close()
 
 # Visualizar distribuição das características por classe
@@ -73,7 +73,7 @@ for i, column in enumerate(df_clean.columns[:-1]):
     sns.histplot(data=df_clean, x=column, hue='Outcome', kde=True, bins=30)
     plt.title(f'Distribuição de {column} por Classe')
 plt.tight_layout()
-plt.savefig('feature_distributions.png')
+plt.savefig('q3/feature_distributions.png')
 plt.close()
 
 # Preparar dados para modelagem
@@ -146,7 +146,7 @@ plt.xlabel('Taxa de Falsos Positivos')
 plt.ylabel('Taxa de Verdadeiros Positivos')
 plt.title('Curva ROC - Regressão Logística')
 plt.legend()
-plt.savefig('roc_curve.png')
+plt.savefig('q3/oc_curve.png')
 plt.close()
 
 # Visualizar importância das características (coeficientes)
@@ -158,7 +158,7 @@ plt.barh(range(len(sorted_idx)), coef[sorted_idx])
 plt.yticks(range(len(sorted_idx)), features[sorted_idx])
 plt.xlabel('Coeficiente')
 plt.title('Importância das Características - Regressão Logística')
-plt.savefig('feature_importance.png')
+plt.savefig('q3/feature_importance.png')
 plt.close()
 
 # Validação cruzada para modelo logístico
@@ -184,7 +184,7 @@ plt.ylabel('Valor Previsto')
 plt.xlabel('Amostra')
 plt.title('Comparação: Regressão Linear vs. Logística')
 plt.legend()
-plt.savefig('linear_vs_logistic.png')
+plt.savefig('q3/linear_vs_logistic.png')
 plt.close()
 
 # Resumo final

@@ -82,7 +82,7 @@ def find_optimal_clusters(data, max_k):
     plt.ylabel('Silhouette Score')
     
     plt.tight_layout()
-    plt.savefig('optimal_clusters.png')
+    plt.savefig('q1/optimal_clusters.png')
     plt.close()
     
     # Encontrar o melhor k pelo silhouette score
